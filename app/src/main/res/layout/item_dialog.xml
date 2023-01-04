@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+        <Button
+            android:id="@+id/dialog_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:text="Заголовок"
+            android:textSize="18dp"
+
+            android:textStyle="bold"
+            app:icon="@drawable/ic_baseline_arrow_back_ios_24"
+            app:iconTint="@color/black"
+            app:rippleColor="@color/purple_200" />
+        <TextView
+            android:id="@+id/dialog_scheme_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_header"
+            android:text="Network"
+            android:padding="4dp"
+            android:textStyle="normal"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/dialog_scheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_scheme_header"
+            android:text="Платежная система"
+            android:padding="4dp"
+            android:textSize="12dp"/>
+        <TextView
+            android:id="@+id/dialog_brand_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_scheme"
+            android:text="Brand"
+            android:padding="4dp"
+            android:textStyle="normal"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/dialog_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_brand_header"
+            android:text="Brand"
+            android:padding="4dp"
+            android:textStyle="normal"
+            android:textSize="12dp"/>
+        <TextView
+            android:id="@+id/dialog_number_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number"
+            android:layout_below="@+id/dialog_brand"
+            android:padding="4dp"
+            android:textStyle="normal"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/dialog_number_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_number_header"
+            android:text="Length: "
+            android:padding="4dp"/>
+        <TextView
+            android:id="@+id/dialog_number_luhn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_number_length"
+            android:text="Luhn: "
+            android:padding="4dp"/>
+        <TextView
+            android:id="@+id/dialog_type_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialog_number_luhn"
+            android:text="Type"
+            android:padding="4dp"
+            android:textStyle="normal"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/dialog_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_type_header"
+            android:text="Type"
+            android:padding="4dp"/>
+        <TextView
+            android:id="@+id/dialog_prepaid_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialog_type"
+            android:text="Prepaid"
+            android:padding="4dp"
+            android:textStyle="normal"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/dialog_prepaid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_prepaid_header"
+            android:text="Prepaid"
+            android:padding="4dp"/>
+        <TextView
+            android:id="@+id/dialog_country_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialog_prepaid"
+            android:text="Country"
+            android:padding="4dp"
+            android:textStyle="normal"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/dialog_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_country_header"
+            android:text="Country"
+            android:padding="4dp"
+            android:autoLink="map"/>
+        <TextView
+            android:id="@+id/dialog_bank_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialog_country"
+            android:text="Bank"
+            android:padding="4dp"
+            android:textStyle="normal"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/dialog_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_bank_header"
+            android:text="Bank"
+            android:padding="4dp"/>
+        <TextView
+            android:id="@+id/dialog_bank_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_bank"
+            android:text="Number"
+            android:padding="4dp"
+            android:autoLink="phone"/>
+        <TextView
+            android:id="@+id/dialog_bank_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_bank_number"
+            android:text="City"
+            android:padding="4dp"
+            android:autoLink="map"/>
+        <TextView
+            android:id="@+id/dialog_bank_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_bank_city"
+            android:text="Url"
+            android:padding="4dp"
+            android:autoLink="all"/>
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

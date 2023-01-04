@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bank Card Task</string>
+    <string name="app_bin_input">BIN номер карты</string>
+    <string name="bin_send_button">Отправить</string>
+    <string name="card_text_header">Заголовок</string>
+    <string name="card_text_description">Описание</string>
+</resources>
